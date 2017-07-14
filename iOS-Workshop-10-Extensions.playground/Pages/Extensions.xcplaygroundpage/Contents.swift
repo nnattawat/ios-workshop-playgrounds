@@ -5,6 +5,15 @@
  * callout(extension syntax):
  using `extension SomeType`, add computed properties, methods, initializers, subscripts, nested types.
  */
+import Foundation
+
+extension String {
+  func snakecased() {
+    self.lowercased().replacingOccurrences(of: " ", with: "_")
+  }
+}
+
+"My string".snakecased()
 
 
 //: Up next ...
